@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tetris</title>
+    <!--Кодировка страницы-->
+    <meta charset="UTF-8">
+    <!--Подключаем CSS-->
+    <link rel="StyleSheet" href="CSS/style.css" />
+</head>
+
+<body onload="read()">
+    <div class="wrapper">
+        <div class="header">
+            <h1 class="header__title title"><span class="header__1">T</span><span class="header__2">e</span><span
+                    class="header__3">t</span><span class="header__4">r</span><span class="header__5">i</span><span
+                    class="header__6">s</span></h1>
+        </div>
+        <div class="container">
+            <div class="input-name">
+                <div class="input-name__row">
+                    <form class="input-name__input" action="main.html" method="get">
+                        <label>Введите имя:<br>
+                            <input class="input-name__form" id="username" placeholder="Имя пользователя"><br>
+                        </label>
+                        <input class="input-name__btn" type="submit" value="Ввести"
+                            onclick="store(); return nextPage()">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

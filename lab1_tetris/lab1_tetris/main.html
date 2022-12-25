@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tetris</title>
+    <!--Кодировка страницы-->
+    <meta charset="UTF-8">
+    <!--Подключаем CSS-->
+    <link rel="StyleSheet" href="CSS/style.css" />
+</head>
+
+<body onload="setData()">
+    <!--Оболочка-->
+    <div class="wrapper" id="root">
+        <div class="header">
+            <h1 class="header__title title"><span class="header__1">T</span><span class="header__2">e</span><span
+                    class="header__3">t</span><span class="header__4">r</span><span class="header__5">i</span><span
+                    class="header__6">s</span></h1>
+        </div>
+        <div class="game">
+            <div class="container">
+                <div class="game__row">
+                    <div class="game__left">
+                        <div class="game__player"><span class="title2">Игрок: </span><span id="name">name</span>
+                        </div>
+                        <div class="game__level"><span class="title2">Уровень: </span><span id="level">0</span>
+                        </div>
+                        <div class="game__score"><span class="title2">Баллы: </span><span id="scores">0</span>
+                        </div>
+                        <div class="game__lines"><span class="title2">Линии: </span><span id="lines">0</span>
+                        </div>
+                        <div class="game__next"><span class="title2">Следующая фигура: </span><br>
+                            <canvas class="game__figure" id="game__figure" width=120 height=120></canvas>
+                        </div>
+                        <ul class="game__control"><span class="title2">Управление: </span><br>
+                            <li>"A" — перемещение фигуры влево</li>
+                            <li>"D" — перемещение фигуры вправо</li>
+                            <li>"S" — уронить фигуру</li>
+                            <li>"W" — повернуть фигуру</li>
+                        </ul>
+                    </div>
+                    <canvas class="game__field" id="game__field" width=320 height=640></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script defer src="js/game.js"></script>
+</body>
+
+</html>

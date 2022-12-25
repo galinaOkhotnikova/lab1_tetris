@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tetris</title>
+    <!--Кодировка страницы-->
+    <meta charset="UTF-8">
+    <!--Подключаем CSS-->
+    <link rel="StyleSheet" href="CSS/style.css" />
+</head>
+
+<body onload="showData()">
+    <div class="wrapper">
+        <div class="header">
+            <h1 class="header__title title"><span class="header__1">T</span><span class="header__2">e</span><span
+                    class="header__3">t</span><span class="header__4">r</span><span class="header__5">i</span><span
+                    class="header__6">s</span></h1>
+        </div>
+        <div class="table">
+            <div class="container">
+                <div class="table__row">
+                    <h2 class="table__subtitle subtitle">Scores:</h2>
+                    <div class="table__text text">
+                        <p class="table__line0" id="line0"> </p>
+                        <p class="table__line1" id="line1"> </p>
+                        <p class="table__line2" id="line2"> </p>
+                        <p class="table__line3" id="line3"> </p>
+                        <p class="table__line4" id="line4"> </p>
+                    </div>
+                    <button class="table__btn" onclick="restart()">PLAY AGAIN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script defer src="js/scores.js"></script>
+</body>
+
+</html>
